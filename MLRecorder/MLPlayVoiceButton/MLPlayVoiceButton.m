@@ -191,7 +191,7 @@
         self.playingSignImageView.hidden = NO;
         [self.indicator stopAnimating];
     }
-    
+    [self updatePlayingSignImage]
     if (self.preferredWidthChangedBlock) {
         self.preferredWidthChangedBlock(self,NO);
     }
